@@ -17,7 +17,6 @@ const DefaultLayout = () => {
     const scroll = useScroll(contentRef) as Position
     useEffect(() => {
         const element = document.getElementById(`${globalCtx.current_href_id}`);
-        console.log(element)
         contentRef.current?.scrollTo({ top: element?.offsetTop || 0, })
     }, [globalCtx.current_href_id])
     useEffect(() => {

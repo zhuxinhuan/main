@@ -28,7 +28,7 @@ const contentImg = [
         id: 3,
         backgroundImage: 'https://uploadstatic.mihoyo.com/contentweb/20200319/2020031921552395638.jpg',
         name: `公司介绍`,
-        content: `1:公司介绍公司介绍公司介绍公司介·2:公司介绍公·3:司介绍公司介绍公司介绍公司介绍公司介绍`
+        content: `1:公司介绍公司介绍公司介绍公司介·2:公司介绍详情·3:司介绍公司介绍公司介绍公司介绍公司介绍`
     },
     {
         id: 4,
