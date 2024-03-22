@@ -26,4 +26,4 @@ export const routes: RouteObject[] = [
         element: load(<Error404 />)
     },
 ];
-export default createBrowserRouter(routes);
+export default createBrowserRouter(routes, { basename: import.meta.env.BASE_URL });

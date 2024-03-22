@@ -1,14 +1,13 @@
 import react from "@vitejs/plugin-react";
 import path from "path";
 import { defineConfig, loadEnv } from "vite";
-import pkg from './package.json';
 import { createHtmlPlugin } from 'vite-plugin-html'
 import VitePluginCompress from 'vite-plugin-compression'
 
 export default defineConfig(({ mode }) => {
   const getEnvFiled = (field: string | number) => loadEnv(mode, './')[field]
   return {
-    base: mode === 'development' ? '' : pkg.homepage,
+    base: mode === 'development' ? '' : '/main/',
     plugins: [
       react(),
       VitePluginCompress(),
