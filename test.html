@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    .progress {
+      width: 200px;
+      height: 10px;
+      background: linear-gradient(-45deg, #0278ee 36%, #7db9e8 28%, #7db9e8 67%, #0278ee 25%);
+      background-size: 24px 12px;
+      /* -webkit-animation: load 3s; */
+      /* animation: load 3s; */
+      position: relative;
+    }
+    .masker {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      opacity: 0.8;
+      background: linear-gradient(90deg, #1c7bda 20%, #fff 100%)
+    }
+    @keyframes load {
+      0% {
+        width: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="progress">
+  <div class="masker"></div>
+</div>
+</body>
+<script>
+</script>
+</html>
