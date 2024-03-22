@@ -1,8 +1,8 @@
 function introduction() {
     return (
         <>
-            <p className=" ">
-                404
+            <p className="text-4xl font-bold text-center">
+                40422
             </p>
         </>
     )
