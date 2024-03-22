@@ -7,6 +7,7 @@ import VitePluginCompress from 'vite-plugin-compression'
 export default defineConfig(({ mode }) => {
   const getEnvFiled = (field: string | number) => loadEnv(mode, './')[field]
   return {
+    base: mode === 'development' ? '' : 'https://zhuxinhuan.github.io/main/',
     plugins: [
       react(),
       VitePluginCompress(),
