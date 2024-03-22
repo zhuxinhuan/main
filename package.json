@@ -2,7 +2,7 @@
   "name": "main-website",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://zhuxinhuan.github.io/main",
+  "homepage": "https://zhuxinhuan.github.io/main/",
   "type": "module",
   "scripts": {
     "dev": "vite",
