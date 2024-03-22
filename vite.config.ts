@@ -22,6 +22,7 @@ export default defineConfig(({ mode }) => {
         }
       })
     ],
+    public: '/main/',
     resolve: {
       //别名
       alias: {
