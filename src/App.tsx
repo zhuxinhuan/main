@@ -1,8 +1,8 @@
 import { FC, useState } from "react";
-import { RouterProvider } from "react-router-dom";
+// import { RouterProvider } from "react-router-dom";
 import { GlobalContext } from "@/context";
-import router from "@/routers";
-// import Three from "@/views/threeDemo";
+// import router from "@/routers";
+import Three from "@/views/threeDemo";
 interface GlobalContext {
   top: number;
   setTop: (theme?: number) => void;
@@ -18,8 +18,8 @@ const App: FC = () => {
   return (
     <>
       <GlobalContext.Provider value={contextVal}>
-        <RouterProvider router={router} />
-        {/* <Three /> */}
+        {/* <RouterProvider router={router} /> */}
+        <Three />
       </GlobalContext.Provider>
     </>
   );
