@@ -28,7 +28,7 @@ const contentImg = [
         id: 3,
         backgroundImage: 'https://uploadstatic.mihoyo.com/contentweb/20200319/2020031921552395638.jpg',
         name: `公司介绍`,
-        content: `1:公司概况·2:公司介绍详情·3:合作案例·4:手绘地图`
+        content: `1:公司概况·2:合作案例·3:手绘地图`
     },
     {
         id: 4,
