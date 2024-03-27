@@ -21,7 +21,7 @@ const App: FC = () => {
     <>
       <GlobalContext.Provider value={contextVal}>
         {
-          import.meta.env.MODE === 'build_an' ? <Three /> : <RouterProvider router={router} />
+          import.meta.env.MODE === 'prod_an' ? <Three /> : <RouterProvider router={router} />
         }
 
       </GlobalContext.Provider>
