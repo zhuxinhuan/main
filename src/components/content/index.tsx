@@ -1,12 +1,14 @@
 import './MainContent.less'
-import { useCallback, useRef } from 'react';
+import { useCallback, useContext, useRef, useState } from 'react';
 import { contentImg } from '@/assets/constant';
 import { useInViewport, useMemoizedFn } from 'ahooks';
 import Title from '../titile';
+import { GlobalContext } from '@/context';
 
 function MainContent() {
     const contentItemRef = useRef<HTMLDivElement[]>([]);
     const itemImgRef = useRef<HTMLImageElement[]>([]);
+    const globalCtx = useContext(GlobalContext)
     const callback = useMemoizedFn((entry) => {
         if (entry.isIntersecting) {
             itemImgRef.current[entry.target.dataset.key].classList.add('animate__animated')
@@ -36,7 +38,7 @@ function MainContent() {
     return (
         <>
             {contentImg.map((item, index) => {
-                return (<div key={index} className='main-content-item' style={{ height: window.innerHeight }} id={`${item.id}`} data-key={index} ref={(el: HTMLDivElement) => {
+                return (<div key={index} className={globalCtx.mobile ? 'main-content-item main-content-item-mobile' : 'main-content-item'} style={{ height: window.innerHeight }} id={`${item.id}`} data-key={index} ref={(el: HTMLDivElement) => {
                     contentItemRef.current[index] = el;
                 }}>
                     <Title id={item.id} />

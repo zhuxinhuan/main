@@ -40,7 +40,7 @@ function HeaderComponent() {
     }
 
     return (
-        <div ref={contentPageRef} className='header'>
+        <div ref={contentPageRef} className={globalCtx.mobile ? 'header mobile-header' : 'header'}>
             <div className='left'>
                 <img ref={logoImgRef} className='logo' src="https://file.ysronline.uninote.com.cn/resource/3d95cede6e2edda291f23cfb2bf991fa.png" alt="游界元始人Logo" />
             </div>
