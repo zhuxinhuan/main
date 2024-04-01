@@ -1,5 +1,5 @@
 import './MainContent.less'
-import { useCallback, useContext, useRef, useState } from 'react';
+import { useCallback, useContext, useRef } from 'react';
 import { contentImg } from '@/assets/constant';
 import { useInViewport, useMemoizedFn } from 'ahooks';
 import Title from '../titile';
