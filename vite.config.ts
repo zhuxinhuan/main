@@ -17,6 +17,7 @@ export default defineConfig(({ mode }) => {
           data: {
             title: getEnvFiled('VITE_BRANDING_NAME') || '',
             favIcon: getEnvFiled('VITE_APP_FAVICON'),
+            injectScript: ''
           }
         }
       })

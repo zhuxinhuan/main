@@ -4,6 +4,7 @@ import { GlobalContext, IGlobalContext } from "@/context";
 import router from "@/routers";
 
 import Three from "@/views/threeDemo";
+import MapContainer from "@/views/threeDemo/MapContainer"; 
 
 
 const App: FC = () => {
@@ -16,6 +17,7 @@ const App: FC = () => {
   return (
     <>
       <GlobalContext.Provider value={contextVal}>
+        {/* <MapContainer></MapContainer> */}
         {
           import.meta.env.MODE === 'prod_an' ? <Three /> : <RouterProvider router={router} />
         }

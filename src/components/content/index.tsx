@@ -13,6 +13,9 @@ function MainContent() {
         if (entry.isIntersecting) {
             itemImgRef.current[entry.target.dataset.key].classList.add('animate__animated')
             itemImgRef.current[entry.target.dataset.key].classList.add('animate__headShake')
+        }else{
+            itemImgRef.current[entry.target.dataset.key].classList.remove('animate__animated')
+            itemImgRef.current[entry.target.dataset.key].classList.remove('animate__headShake')
         }
     });
     useInViewport(contentItemRef.current, {

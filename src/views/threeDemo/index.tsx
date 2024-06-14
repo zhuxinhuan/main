@@ -26,7 +26,7 @@ function Index() {
         // 两个参数分别为几何体geometry、材质material
         const mesh = new THREE.Mesh(geometry, material); //网格模型对象Mesh
         const width = window.innerWidth || 800; //宽度
-        const height = window.innerHeight ||500; //高度
+        const height = window.innerHeight || 500; //高度
         renderer.setSize(width, height); //设置three.js渲染区域的尺寸(像素px)
         mesh.position.set(0, 0, 0);
         camera.position.set(100, 200, 200);  //相机观察目标指向Threejs 3D空间中某个位置
