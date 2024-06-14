@@ -30,7 +30,6 @@ function NewBody() {
 
     return (
         <>
-            {/* <CaseBox imgList={[{ id: 1 }, { id: 2 }, { id: 3 }, { id: 4 }, { id: 5 }]} /> */}
             <div className='home-header'>
                 <div className='home-header-title'>
                     <span>让历史人文之美,在指尖绽放</span>
@@ -70,7 +69,7 @@ function NewBody() {
                 </div>
                 <div id="5">
                     <div className='home-content-title'>合作案例  </div>
-                    <CaseBox imgList={[{ id: 1 }, { id: 2 }, { id: 3 }, { id: 4 }, { id: 5 }]} />
+                    <CaseBox imgList={[]} />
                 </div>
             </div>
 

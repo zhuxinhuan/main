@@ -3,7 +3,7 @@ import "./common.less";
 
 function CaseBox(props: { imgList: Array<any> }) {
     const { imgList } = props
-    const onMouseEnter = (e) => {
+    const onMouseEnter = (e: any) => {
         const id = e.target.dataset.value
         console.log(id, 1111111111)
         const imgwrap = document.getElementById(id)
@@ -13,7 +13,7 @@ function CaseBox(props: { imgList: Array<any> }) {
             imgwrap.style.height = "100%"
         }
     }
-    const onMouseLeave = (e) => {
+    const onMouseLeave = (e: any) => {
         const id = e.target.dataset.value
         console.log(id, 22222222222)
         const imgwrap = document.getElementById(id)
