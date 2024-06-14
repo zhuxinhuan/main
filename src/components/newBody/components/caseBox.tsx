@@ -25,6 +25,15 @@ function CaseBox(props: { imgList: Array<any> }) {
     }
     return (
         <div className='case-box'>
+            {imgList.map((item,) => {
+                return (
+                    <div onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave} data-value={item.id} className="case-item">
+                        <div id={item.id} data-value={item.id} onMouseLeave={onMouseLeave} >
+                            <img src={item.img}></img>
+                        </div>
+                    </div>
+                )
+            })}
             <div onMouseEnter={onMouseEnter} data-value={'ffff'} className="case-item">
                 <div id="ffff" data-value={'ffff'} onMouseLeave={onMouseLeave} >
                     <img src="https://file.ysronline.uninote.com.cn/resource/726/xm5.png"></img>
