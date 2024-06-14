@@ -1,12 +1,7 @@
 import './newBody.less'
 import { useRef } from 'react';
-import zhihuidaolan from '@/assets/zhihuidaolan.png';
-import jingguanhudong from '@/assets/jingguanhudong.png';
 import ShowBox from './components/showBox';
 import CaseBox from './components/caseBox';
-import juqing1 from '@/assets/juqing1.png';
-import juqing2 from '@/assets/juqing2.png';
-import chengshiyingxiao from '@/assets/chengshiyingxiao.png';
 import { useInViewport, useMemoizedFn } from 'ahooks';
 
 function NewBody() {
@@ -40,7 +35,7 @@ function NewBody() {
                 <div id='1'>
                     <div className='home-content-title'>掌上地图</div>
                     <div className='desc'>提供了丰富的地图工具和功能，旨在帮助用户快速掌握自己</div>
-                    <img className='img-1' src={zhihuidaolan} alt="" />
+                    <img className='img-1' src='https://ysr-resource-0205.oss-cn-chengdu.aliyuncs.com/uploads/6ec897d2b9d167888fe120fd987ffbf1.png' alt="" />
                 </div>
                 <div id="2">
                     <div className='home-content-title'>景观互动  </div>
@@ -48,7 +43,7 @@ function NewBody() {
                         <div className='left-content'>
                             提供了丰富的地图工具和功能，旨在帮助用户快速掌握当前所在景区位置，规划路线，并准确到达目的地。提供了丰富的地图工具和功能，旨在帮助用户快速掌握当前所在景区位置，规划路线，并准确到达目的地。
                         </div>
-                        <img src={jingguanhudong} alt="" />
+                        <img src={'https://ysr-resource-0205.oss-cn-chengdu.aliyuncs.com/uploads/d9d2ba0f66617e9a79313511f3888a10.png'} alt="" />
                     </div>
                 </div>
                 <div id="3">
@@ -59,13 +54,13 @@ function NewBody() {
                     <div className='home-content-title'>剧情游览  </div>
                     <div className='content-bg2'>
                         <div>提供了丰富的地图工具和功能，旨在帮助用户快速掌握当前所在景区位置，规划路线，并准确到达目的地。</div>
-                        <img src={juqing1} alt="" />
-                        <img src={juqing2} alt="" />
+                        <img src={'https://ysr-resource-0205.oss-cn-chengdu.aliyuncs.com/uploads/e034ce56781bd652a129f6e550ab2987.png'} alt="" />
+                        <img src={'https://ysr-resource-0205.oss-cn-chengdu.aliyuncs.com/uploads/4b82bbf1a9bfed1758fcb23530537a6b.png'} alt="" />
                     </div>
                 </div>
                 <div id="4">
                     <div className='home-content-title'>掌上导览  </div>
-                    <img className='img-1' src={chengshiyingxiao} alt="" />
+                    <img className='img-1' src={'https://ysr-resource-0205.oss-cn-chengdu.aliyuncs.com/uploads/cff659c5c46f9a4b52ed552a9342c200.png'} alt="" />
                 </div>
                 <div id="5">
                     <div className='home-content-title'>合作案例  </div>
