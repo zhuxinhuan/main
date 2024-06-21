@@ -1,5 +1,4 @@
 import React from "react";
-import miniCode from "../../assets/miniCode.png";
 import "./FootCompnent.less";
 
 const FootCompnent = React.forwardRef<HTMLDivElement>(() => {
@@ -15,7 +14,7 @@ const FootCompnent = React.forwardRef<HTMLDivElement>(() => {
                 联系我们:12345678900
             </span>
             <div className="imgwrap">
-                <img className="img" src={miniCode} alt="" />
+                <img className="img" src={'https://ysr-resource-0205.oss-cn-chengdu.aliyuncs.com/uploads/b8c391776cfdf40bfa04ff8ab20c7b68.png'} alt="" />
             </div>
         </div>
     );
