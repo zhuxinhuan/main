@@ -2,15 +2,14 @@ const headData = [
     { name: '首页', id: 1, path: '/' },
     { name: '景观互动', id: 2, path: '/' },
     { name: '公司介绍', id: 3, path: '/' },
-
-    {
-        name: '掌上地图',
-        children: [
-            { name: '手绘地图', path: '/cooperation' },
-            { name: '实时定位' },
-            { name: '景观导览' },
-        ]
-    },
+    // {
+    //     name: '掌上地图',
+    //     children: [
+    //         { name: '手绘地图', path: '/cooperation' },
+    //         { name: '实时定位' },
+    //         { name: '景观导览' },
+    //     ]
+    // },
     { name: '联系我们', id: 4, path: '/' },
 ]
 const contentImg = [
