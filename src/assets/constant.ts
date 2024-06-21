@@ -6,9 +6,9 @@ const headData = [
     {
         name: '掌上地图',
         children: [
-            { name: '手绘地图', path: '/cooperation' },
-            { name: '实时定位' },
-            { name: '景观导览' },
+            // { name: '手绘地图', path: '/cooperation' },
+            // { name: '实时定位' },
+            // { name: '景观导览' },
         ]
     },
     { name: '联系我们', id: 4, path: '/' },

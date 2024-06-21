@@ -45,13 +45,13 @@ function HeaderComponent() {
                 <img ref={logoImgRef} className='logo' src="https://file.ysronline.uninote.com.cn/resource/3d95cede6e2edda291f23cfb2bf991fa.png" alt="游界元始人Logo" />
             </div>
             <div className='right'>
-                {headData.map((item, index) => {
+                {headData.map((item: any, index) => {
                     return <div className='item' data-id={item.id} key={index} onClick={changeAnchor}>
                         {item.name}
                         {
                             item.children && <div className='nav-container'>
                                 {
-                                    item.children && item.children.map((item, index) => {
+                                    item.children.map((item: any, index: number) => {
                                         return <div className='nav-item' key={index} data-path={item.path} onClick={changePage}>
                                             <span data-path={item.path}  >
                                                 {item.name}
