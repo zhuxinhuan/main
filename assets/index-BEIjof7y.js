@@ -1,0 +1,1 @@
+import{j as t}from"./index-Bk4MUKQ-.js";function i(){return t.jsx("div",{className:"introduction",children:t.jsx("div",{children:"Click on the Vite and React logos to learn more"})})}export{i as default};
