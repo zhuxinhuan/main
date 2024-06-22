@@ -2,7 +2,7 @@ import { lazy, Suspense, ReactNode } from "react";
 import { createBrowserRouter, RouteObject } from "react-router-dom";
 import LoadingComponent from "@/components/Loading";
 import LayoutPage from "@/views/main";
-import { NewBody } from "@/components";
+import { PageTwo } from "@/components";
 const Introduction = lazy(() => import("@/views/introduction"));
 const Error404 = lazy(() => import("@/views/error/404"));
 const load = (children: ReactNode): ReactNode => (
@@ -15,7 +15,7 @@ export const routes: RouteObject[] = [
         element: load(<LayoutPage />),
         children: [
             // { path: "/", element: <MainContent /> },
-            { path: "/", element: <NewBody /> },
+            { path: "/", element: <PageTwo /> },
             {
                 path: "/cooperation",
                 element: load(<Introduction />),

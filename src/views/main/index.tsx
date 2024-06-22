@@ -4,7 +4,7 @@ import "./index.less";
 import { useCallback, useContext, useEffect, useRef } from "react";
 import { useScroll } from "ahooks";
 import { GlobalContext } from "@/context";
-import FootComp from '@/components/foot'
+// import FootComp from '@/components/foot'
 type Position = {
     left: number;
     top: number;
@@ -12,7 +12,6 @@ type Position = {
 const DefaultLayout = () => {
     const contentRef = useRef<HTMLDivElement>(null)
     const scrollBtn = useRef<HTMLDivElement>(null)
-    const footContainerRef = useRef<HTMLDivElement>(null)
     const globalCtx = useContext(GlobalContext)
     const scroll = useScroll(contentRef) as Position
     useEffect(() => {
@@ -35,12 +34,13 @@ const DefaultLayout = () => {
         <>
             <HeaderComponent />
             <div className="layout-container" style={{ height: window.innerHeight + 'px' }} id="parent" ref={contentRef}>
-                <div className="layout-content"  >
+                <div className="h-full">
+                    {/* <div className="layout-content"  > */}
                     <Outlet />
                     <div ref={scrollBtn} onClick={goTop}>
                     </div>
                 </div >
-                <FootComp ref={footContainerRef}></FootComp>
+                {/* <FootComp ref={footContainerRef}></FootComp> */}
             </div>
         </>
 

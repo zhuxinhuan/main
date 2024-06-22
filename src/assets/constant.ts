@@ -1,16 +1,26 @@
+// const headData = [
+//     { name: '首页', id: 1, path: '/' },
+//     { name: '景观互动', id: 2, path: '/' },
+//     { name: '应用场景', id: 3, path: '/' },
+//     // {
+//     //     name: '掌上地图',
+//     //     children: [
+//     //         { name: '手绘地图', path: '/cooperation' },
+//     //         { name: '实时定位' },
+//     //         { name: '景观导览' },
+//     //     ]
+//     // },
+//     { name: '景区使用案例', id: 4, path: '/' },
+//     { name: '解决方案', id: 5, path: '/' },
+// ]
 const headData = [
     { name: '首页', id: 1, path: '/' },
-    { name: '景观互动', id: 2, path: '/' },
-    { name: '公司介绍', id: 3, path: '/' },
-    // {
-    //     name: '掌上地图',
-    //     children: [
-    //         { name: '手绘地图', path: '/cooperation' },
-    //         { name: '实时定位' },
-    //         { name: '景观导览' },
-    //     ]
-    // },
-    { name: '联系我们', id: 4, path: '/' },
+    { name: '功能概览', id: 2, path: '/' },
+    { name: '景观互动', id: 3, path: '/' },
+    { name: '全域旅游', id: 4, path: '/' },
+    { name: '应用场景', id: 5, path: '/' },
+    { name: '解决方案', id: 6, path: '/' },
+    { name: '合作景区', id: 7, path: '/' },
 ]
 const contentImg = [
     {
